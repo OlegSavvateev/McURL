@@ -6,7 +6,7 @@ PHP класс для многопоточной работы с cURL.
 --------------------
     $mc = new McURL();
     for($i=1; $i<=100; $i++){
-        $mc->addRequest(/*URL*/, 'callback');
+        $mc->add(/*URL*/, 'callback');
     }
     $mc->run();
 

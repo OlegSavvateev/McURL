@@ -12,7 +12,7 @@ require_once('phpQuery-onefile.php');
 
 $mc = new McURL();
 for($i=1; $i<=20; $i++){
-    $mc->addRequest('http://toster.ru/questions/latest?page='.$i, 'callback');
+    $mc->add('http://toster.ru/questions/latest?page='.$i, 'callback');
 }
 $mc->run();
 

@@ -28,7 +28,7 @@ class McURL {
      * @param array $curlOpt Дополнительные опции для cURL, если необходимо (http://php.net/manual/ru/function.curl-setopt.php).
      * @param mixed $data Дополнительные данные, привязанные к запросу (доступны в callback функции через $data).
      */
-    public function addRequest($url, $callback=null, $proxy=null, $browser=null, $curlOpt=null, $data=null)
+    public function add($url, $callback=null, $proxy=null, $browser=null, $curlOpt=null, $data=null)
     {
         $this->_queue[] = array($url, $callback, $proxy, $browser, $curlOpt, $data);
     }
